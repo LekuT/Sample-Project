@@ -8,6 +8,7 @@ node {
         }
         stage ('Build') {
         	sh "echo 'shell scripts to build project...'"
+		sh 'pwd'
         }
         stage ('Tests') {
 	        parallel 'static': {
