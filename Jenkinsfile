@@ -12,7 +12,7 @@ node {
 		sh 'ls'
         }
         stage ('Tests') {
-	        parallel 'static': {
+		parallel 'static': {
 	            sh "echo 'shell scripts to run static tests...'"
 	        },
 	        'unit': {
